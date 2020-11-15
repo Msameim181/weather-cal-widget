@@ -38,7 +38,7 @@ module.exports.createWidget = async (settings, name, iCloudInUse) => {
 async function setup(name, iCloudInUse, codeFilename, gitHubUrl) {
   
   const fm = iCloudInUse ? FileManager.iCloud() : FileManager.local()
-  const widgetUrl = "https://raw.githubusercontent.com/mzeryck/Weather-Cal/main/weather-cal.js"
+  const widgetUrl = "https://raw.githubusercontent.com/Msameim181/weather-cal-widget/master/weather-cal.js"
   
   // If no setup file exists, this is the initial Weather Cal setup.
   const setupPath = fm.joinPath(fm.libraryDirectory(), "weather-cal-setup")
